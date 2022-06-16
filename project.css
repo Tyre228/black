@@ -1,0 +1,151 @@
+* {
+    margin:0px;
+    padding:0px;
+}
+body {
+    padding:0px 15%;
+    padding-top:100px;
+}
+.header {
+    text-align: center;
+    margin-bottom:50px;
+    
+}
+.title {
+    color:#1E434C;
+    font-family: 'Fascinate', cursive;
+    font-size:30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.header > .title {
+    color:#1E434C;
+    display: block;
+    font-size:40px;
+    font-family: 'Fascinate', cursive;
+    letter-spacing: 10px;
+    transition:500ms all;
+}
+.main {
+    margin-bottom:100px;
+}
+.schedule {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+.table {
+    padding:20px;
+    width:100%;
+    border:5px solid gray;
+}
+.table > .wrapper {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+}
+.table > .title {
+    margin-bottom: 40px;
+}
+.column {
+    border-right: 3px solid gray;
+    border-left: 3px solid gray;
+    padding:0px 10px;
+    margin:0px 20px;
+}
+.column > .title {
+    font-size: 25px;
+    margin-bottom: 30px;
+    letter-spacing: 5px;
+}
+.column_duration {
+    width:180px;
+}
+.column_point {
+    width:100px;
+    text-align: center;
+}
+.point__child {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size:16px;
+    margin-bottom:10px;
+    height:20px;
+}
+.action__child {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size:16px;
+    margin-bottom:10px;
+    height:20px;
+}
+.duration__child {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size:16px;
+    margin-bottom:10px;
+    height:20px;
+}
+.condition__child {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size:16px;
+    margin-bottom:10px;
+    height:20px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+}
+.commentline {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size:16px;
+    margin-bottom:10px;
+    height:20px;
+    color:lightgray;
+}
+.column_action {
+    width:260px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
