@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name = "viewport" content="width=device-width">
     <title>Document</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link href="https://fonts.googleapis.com/css2?family=Fascinate&family=Kdam+Thmor+Pro&family=Montserrat:wght@500&display=swap" rel="stylesheet">
@@ -9,10 +10,10 @@
 </head>
 <body>
     <div class="overimage"><span class="material-symbols-outlined">calendar_month</span></div>
-    <div class="header">
+    <header class="header">
         <p class="title">Schedule for Nikita and Kiril</p>
-    </div>
-    <div class="main">
+    </header>
+    <main class="main">
         <div class="schedule">
             <nav class="days">
                 <a href = "#table_monday" class="monday"><p>monday</p></a>
@@ -625,6 +626,7 @@
                         <input type = "text" placeholder = "Write comment" class="commentline">
                         <input type = "text" placeholder = "Write comment" class="commentline">
                         <input type = "text" placeholder = "Write comment" class="commentline">
+                        <input type = "text" placeholder = "Write comment" class="commentline">
                     </div>
                 </div>
             </div>
@@ -689,12 +691,19 @@
                         <input type = "text" placeholder = "Write comment" class="commentline">
                         <input type = "text" placeholder = "Write comment" class="commentline">
                         <input type = "text" placeholder = "Write comment" class="commentline">
+                        <input type = "text" placeholder = "Write comment" class="commentline">
                     </div>
                 </div>
             </div>
             </div>
         </div>
-    </div>
-    <script src="file.js"></script>
+    </main>
+    <script>
+        var overimage = document.querySelector(".overimage");
+        function imageChanger() {
+            setTimeout(function classChanger() {overimage.className = "overimage overimage_invisited";}, 3000)
+            }
+        overimage.addEventListener("load", imageChanger())
+    </script>
 </body>
 </html>
