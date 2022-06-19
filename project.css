@@ -3,13 +3,12 @@
     padding:0px;
 }
 body {
-    padding:0px 15%;
-    padding-top:100px;
+    padding:0px 10%;
+    padding-top:50px;
 }
 .header {
     text-align: center;
-    margin-bottom:50px;
-    
+    margin-bottom:80px;
 }
 .title {
     color:#1E434C;
@@ -28,7 +27,7 @@ body {
     transition:500ms all;
 }
 .main {
-    margin-bottom:100px;
+    margin-bottom:25px;
 }
 .schedule {
     display: -webkit-flex;
@@ -103,17 +102,77 @@ body {
     font-size:16px;
     margin-bottom:10px;
     height:20px;
-    color:lightgray;
+    color:dimgray;
+    border:none;
+    display:block;
+    outline:none;
+    background-color:whitesmoke
 }
 .column_action {
     width:260px;
 }
 
-
-
-
-
-
+.table {
+    opacity: 0;
+    transition:1s all;
+    display: none;
+}
+.table:target {
+    transition:1s all;
+    opacity: 1;
+    display: block;
+}
+.days > a {
+    max-width:200px;
+    min-width:200px;
+    transform:1s all;
+    font-size:20px;
+    border:2px solid gray;
+    border-right:none;
+    display: block;
+    width:200px;
+    padding:10px 0px;
+    padding-left:20px;
+    background-color:whitesmoke;
+    text-decoration:none;
+}
+.days > a > p {
+    text-transform: uppercase;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    position:relative;
+    left:40px;
+    color:gray;
+    text-decoration:none;
+    transition:0.2s all;
+}
+.days > a > p:hover {
+    transition:0.2s all;
+    left: 20px;
+}
+.days > a > p:checked {
+    left: 0px;
+}
+.table:nth-child(1) {
+    background-color: whitesmoke;
+}
+.table:nth-child(2) {
+    background-color: whitesmoke;
+}
+.table:nth-child(3) {
+    background-color: whitesmoke;
+}
+.table:nth-child(4) {
+    background-color: whitesmoke;
+}
+.table:nth-child(5) {
+    background-color: whitesmoke;
+}
+.table:nth-child(6) {
+    background-color: whitesmoke;
+}
+.table:nth-child(7) {
+    background-color: whitesmoke;
+}
 
 
 
