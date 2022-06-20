@@ -699,6 +699,25 @@
         </div>
     </main>
     <footer></footer>
-    <script src="file.js"></script>
+    <script>
+        var overimage = document.querySelector('.overimage');
+        var footer = document.querySelector("footer");
+        var width;
+        function imageChanger() {
+        setTimeout(classChanger, 1500)
+        }
+        function classChanger() {
+        overimage.className = "overimage overimage_invisited";
+        }
+        overimage.addEventListener("load", imageChanger());
+
+
+        setInterval(windowWidth, 500);
+        function windowWidth() {
+        width = window.innerWidth;
+        console.log(width)
+        footer.innerHTML = `<footer>${width}</footer>`
+        }
+    </script>
 </body>
 </html>
