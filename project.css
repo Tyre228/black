@@ -35,8 +35,8 @@ body {
     z-index: -1;
 }
 .overimage_invisited > span {
-    top:0px;
-    transition:3s all ease;
+    margin-top: 0%;
+    transition:2s all ease;
     opacity: 0;
     z-index: -1;
 }
@@ -51,7 +51,11 @@ body {
     text-transform: uppercase;
     text-align: center;
 }
-
+@media (max-width: 1410px) {
+    .title {
+        font-size:10px;
+    }
+}
 .header > .title {
     color:#1E434C;
     display: block;
@@ -101,6 +105,7 @@ body {
     display: -o-flex;
     display: flex;
     justify-content: space-between;
+    flex-shrink: 1;
 }
 .table > .title {
     margin-bottom: 40px;
@@ -111,6 +116,14 @@ body {
     padding:0px 10px;
     margin:0px 20px;
 }
+.column_action {
+    width:260px;
+}
+@media (max-width: 1520px) {
+    .column_action {
+        width:200px;
+    }
+}
 .column > .title {
     font-size: 25px;
     margin-bottom: 30px;
@@ -119,6 +132,11 @@ body {
 @media (max-width: 1600px) {
     .column > .title {
         font-size: 20px;
+    }
+}
+@media (max-width: 1400px) {
+    .column > .title {
+        font-size: 18px;
     }
 }
 .column_duration {
@@ -168,25 +186,21 @@ body {
 }
 @media (max-width: 1600px) {
     .point__child {
-        font-size:12px;
+        font-size:14px;
     }
     .action__child {
-        font-size:12px;
+        font-size:14px;
     }
     .duration__child {
-        font-size:12px;
+        font-size:14px;
     }
     .condition__child {
         font-size:12px;
     }
     .commentline {
-        font-size:12px;
+        font-size:14px;
     }
 }
-.column_action {
-    width:260px;
-}
-
 .table {
     opacity: 0;
     transition:1s all;
@@ -211,6 +225,13 @@ body {
     background-color:whitesmoke;
     text-decoration:none;
 }
+@media (max-width: 1520px) {
+    .days > a {
+        max-width: 150px;
+        min-width: 150px;
+        padding-left:10px;
+    }
+}
 .days > a > p {
     text-transform: uppercase;
     font-family: 'Kdam Thmor Pro', sans-serif;
@@ -220,9 +241,20 @@ body {
     text-decoration:none;
     transition:0.2s all;
 }
+@media (max-width: 1520px) {
+    .days > a > p {
+        left:25px;
+        font-size: 14px;
+    }
+}
 .days > a > p:hover {
     transition:0.2s all;
     left: 20px;
+}
+@media (max-width: 1520px) {
+    .days > a > p:hover {
+        left:15px;
+    }
 }
 .days > a > p:checked {
     left: 0px;
